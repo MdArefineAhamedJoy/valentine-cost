@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Valentin Cost</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main >
+        <h1 class="font-semibold text-5xl text-center text-red-400  ">Valentin Baguets : 00</h1>
+        <div class="grid grid-cols-2 w-11/12 mx-auto r">
+            <section class="bg-green-500  rounded-lg">
+                <div class="flex flex-col w-3/4 mx-auto items-center  p-2 ">
+                    <div  class="bg-white p-4 text-center rounded-lg w-4/5 shadow-2xl " >
+                        <img src="img/kitkat.jpg" alt="" class=" w-44 h-28  block mx-auto">
+                        <h2 class="font-medium">KitKat Cochleate</h2>
+                        <h2 class="text-lg font-semibold">Price: <span id="kitPrice">200</span></h2>
+                        <input class="block mx-auto shadow-md text-center border-2 border-red-200 rounded-md" type="text" placeholder="Type Here Quantity" id="kitFiled">
+                        <button class="bg-red-400 px-5 py-2 mt-1 text text-white rounded-md hover:bg-red-700" id="kitBuy">Buy Now</button>
+                    </div>
+                    <div  class="bg-white p-4 text-center rounded-lg w-4/5 mt-3 shadow-2xl" >
+                        <img src="img/istockphoto-1095278742-170667a.jpg" alt="" class=" w-44 h-28  block mx-auto">
+                        <h2 class="font-medium">Ross </h2>
+                        <h2 class="text-lg font-semibold">Price: <span id="rossPrice">100</span></h2>
+                        <input class="block mx-auto shadow-md text-center border-2 border-red-200 rounded-md" type="text" id="rossFiled" placeholder="Type Here Quantity">
+                        <button class="bg-red-400 px-5 py-2 mt-1 text text-white rounded-md hover:bg-red-700" id="rossBuy">Buy Now</button>
+                    </div>
+                    <div  class="bg-white p-4 text-center rounded-lg w-4/5 mt-3 shadow-2xl " >
+                        <img src="img/SPRIAL NOTE BOOK-500x500.png" alt="" class=" w-44 h-28 block mx-auto">
+                        <h2 class="font-medium">Note Book</h2>
+                        <h2 class="text-lg font-semibold">Price: <span id="notePrice">250</span></h2>
+                        <input id="noteFiled" class="block mx-auto shadow-md text-center border-2 border-red-200 rounded-md" type="text" placeholder="Type Here Quantity">
+                        <button class="bg-red-400 px-5 py-2 mt-1 text text-white rounded-md hover:bg-red-700" id="noteBuy">Buy Now</button>
+                    </div>
+                </div>
+                </section>
+                <section class="bg-red-400 rounded-lg">
+                    <div class="text-center p-10 m-4">
+                        <h1 class="text-3xl font-semibold my-2 border-b-2 pb-2">Cochleate : <span id="kitTotal">00</span></h1>
+                        <h1 class="text-3xl font-semibold my-2 border-b-2 pb-2">Ross : <span id="totalRoss">00</span></h1>
+                        <h1 class="text-3xl font-semibold my-2 border-b-2 pb-2">Dairy: <span id="totalNote">00</span></h1>
+                        <h1 class="text-3xl font-bold mb-4 mt-10  pb-2">Total: <span id="totalBalance">00</span></h1>
+                        <p class="text-1xl font-semibold mt-20 my-6  pb-2">Use Promo Code For 10% Discount</p>
+                        <input class="py-2 w-3/4 px-5" id="discountFiled" type="text" placeholder="101">
+                        <button class="bg-green-800 px-5   py-2 mt-1 text text-white rounded-md hover:bg-green-400" id="applyBtn">Apply</button>
+                        <h1 class="text-3xl font-semibold mt-10  pb-2 " id="allCost">All Cost : <span>00</span></h1>
+                    </div>
+                </section>
+        </div>
+    </main>
+    <script src="utilitis.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
